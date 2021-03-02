@@ -33,7 +33,9 @@ class Api::SongsController < ApplicationController
   end
 
 
-  # def show
-  #   render 'show.json.jb'
-  # end
+  def destroy
+    @song = Song.find_by(id: params[:id])
+    @song.destroy
+    render json: {message: "The song has been exsanguinated."}
+  end
 end
