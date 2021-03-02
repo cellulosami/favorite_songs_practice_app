@@ -3,5 +3,5 @@
   title: @song[:title],
   album: @song[:album],
   artist: @song[:artist],
-  year: @song[:title]
+  year: @song[:year]
 }
